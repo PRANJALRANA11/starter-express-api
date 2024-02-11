@@ -12,7 +12,7 @@ app.all('/', (req, res) => {
   hitURL();
   
   // Call the function every 30 minutes (30 minutes = 30 * 60 * 1000 milliseconds)
-  setInterval(hitURL, 30 * 60 * 1000);
+  setInterval(hitURL, 30 );
     res.send('Yo!')
 })
 app.listen(process.env.PORT || 3000)

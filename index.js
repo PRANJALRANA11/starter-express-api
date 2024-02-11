@@ -18,7 +18,7 @@ app.all('/', (req, res) => {
     hitURL();
   
     // Call the function every 30 minutes
-    setInterval(hitURL, 30*60*1000);
+    setInterval(hitURL, 30*60*500);
   
     res.send('Yo!');
 });
